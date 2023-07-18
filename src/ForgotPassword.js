@@ -34,11 +34,19 @@ export default function ForgotPassword(){
         <>
         <center>
             <NavBar/>
-            <h1>ForgotPassword Page</h1>
+            <div class="card">
+			<div class="card2">
+            <h3>ForgotPassword Page</h3>
             <form onSubmit={check}>
-                <input type="text" placeholder={"Enter Reg Email:"} onChange={hUserName} value={userName}/><br/><br/>
-                <input type="submit" value="Reset" />
-            </form>
+                <div className="form">
+                    <input className="input" type="text" placeholder={"Enter Reg Email:"} onChange={hUserName} value={userName} required/>
+                    <span class="input-border"></span><br/>
+                </div>
+                <br/>
+                <input id="reg" type="submit" value="Reset" />
+            </form><br/>
+            </div>
+            </div>
         </center>
         </>
     );

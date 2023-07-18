@@ -6,6 +6,7 @@ export default function About()
 	<>
 	<center>
 	<NavBar/>
+	<p></p>
 	</center>
 	</>
 	);
